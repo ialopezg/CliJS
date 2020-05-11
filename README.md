@@ -1,2 +1,2 @@
 # custom-console-colors
- Custom colors for use in NodeJS console
+ Custom colors to be used in a NodeJS console

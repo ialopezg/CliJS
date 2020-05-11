@@ -1,0 +1,26 @@
+{
+  "name": "custom-console-colors",
+  "version": "0.0.1",
+  "description": "Custom colors to be used in a NodeJS console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ialopezg/custom-console-colors.git"
+  },
+  "keywords": [
+    "console",
+    "color",
+    "colors",
+    "style",
+    "console styled"
+  ],
+  "author": "Isidro A. Lopez G. <me@ialopezg.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ialopezg/custom-console-colors/issues"
+  },
+  "homepage": "https://github.com/ialopezg/custom-console-colors#readme"
+}
