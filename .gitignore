@@ -5,3 +5,8 @@
 ### Jetbrain Software
 # IntelliJ IDEA
 .idea
+
+### Package Dependency Manager
+# NodeJS
+node_modules
+package-lock.json
