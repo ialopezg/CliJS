@@ -10,3 +10,10 @@
 # NodeJS
 node_modules
 package-lock.json
+
+### Other files
+# Mac OSX project files
+.DS_Store
+
+# Build process files
+lib
