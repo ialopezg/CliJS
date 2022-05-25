@@ -6,7 +6,7 @@
   "module": "lib/index.es.js",
   "types": "lib/index.d.js",
   "scripts": {
-    "prebuild": "rollup --version && rimraf lib && npm run lint",
+    "prebuild": "rollup --version && rimraf lib && npm run lint:fix",
     "build": "rollup -c",
     "build:live": "nodemon -e ts --watch src index.js",
     "compile": "npm run prebuild && tsc -p tsconfig.prod.json",
