@@ -11,7 +11,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Build Status][travis-image-windows]][travis-url]
 [![Build Status][travis-image-osx]][travis-url]
-[![Coverage Status](https://coveralls.io/repos/github/ialopezg/corejs/badge.svg?branch=main)](https://coveralls.io/github/ialopezg/corejs?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/ialopezg/custom-console-colors/badge.svg?branch=main)](https://coveralls.io/github/ialopezg/custom-console-colors?branch=main)
 [![All Contributors][contributors]][contributors-link]
 
  > Custom Console Colors to be used in a NodeJS or Terminal console.
@@ -31,6 +31,52 @@
 - Compatible with both TypeScript and ES6 (I recommend to use [TypeScript](http://www.typescriptlang.org))
 - Zero dependencies
 
+## Getting started
+
+### Requirements
+
+- `npm v6+` or `yarn v1.17+`
+- `NodeJS v8+`
+
+### Installation
+
+You have two options to install this repository.
+
+1. By adding the dependency to your `package.json` file.
+
+   ```json
+   {
+     "dependencies": {
+       "@ialopezg/core": "^0.0.1"
+     }
+   }
+   ```
+
+   ```bash
+   # Install dependencies
+   # NPM
+   npm install
+   # or Yarn
+   yarn
+   ```
+
+2. By using a package manager
+   ```bash
+   # NPM
+   npm install --save @ialopezg/core
+   # or Yarn
+   yarn add @ialopezg/core
+   ```
+## Documentation & Quick Start
+
+[Documentation & Tutorial](https://ialopezg.gitbook.io/custom-console-colors/)
+
+## Future
+
+CoreJS is very much still a work in progress. There is still some things to finish:
+
+- Test utilities
+- and more...
 
 ## Contributors
 

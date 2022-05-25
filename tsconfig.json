@@ -9,9 +9,10 @@
     "outDir": "./lib",
     "rootDir": "./src","noImplicitAny": true,
     "moduleResolution": "node",
-    "typeRoots": ["./src/types"],
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "typeRoots": ["node_modules/@types"],
+    "types": ["jest", "node"]
   },
   "include": ["./src/**/*"],
-  "exclude": ["build", "node_modules"]
+  "exclude": ["lib", "node_modules", "**/*.spec.ts"]
 }

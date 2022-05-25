@@ -1,19 +1,30 @@
-#################################################
-# Library - Custom Logger
-#################################################
+# dependencies
+node_modules/
 
-### Jetbrain Software
-# IntelliJ IDEA
-.idea
+# IDE
+/.idea
+/.awcache
+/.vscode
+/.devcontainer
+*.code-workspace
 
-### Package Dependency Manager
-# NodeJS
-node_modules
-package-lock.json
+# bundle
+packages/**/*.d.ts
+packages/**/*.js
 
-### Other files
-# Mac OSX project files
+# misc
 .DS_Store
+lerna-debug.log
+npm-debug.log
+yarn-error.log
+/**/npm-debug.log
+/packages/**/.npmignore
+/packages/**/LICENSE
 
-# Build process files
-lib
+# tests
+/test
+/benchmarks/memory
+/coverage
+/.nyc_output
+/packages/graphql
+build/config\.gypi
