@@ -1,6 +1,10 @@
 # dependencies
 node_modules/
 
+# compiled output
+dist/
+lib/
+
 # IDE
 /.idea
 /.awcache
