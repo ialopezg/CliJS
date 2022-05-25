@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "ESNext",
-    "lib": ["es6"],
+    "target": "ES6",
+    "module": "CommonJS",
+    "lib": ["ES6"],
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "./lib",
-    "rootDir": "./src","noImplicitAny": true,
+    "rootDir": "./src",
+    "noImplicitAny": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "typeRoots": ["node_modules/@types"],

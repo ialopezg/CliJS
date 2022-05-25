@@ -1,1 +1,1 @@
-export * from './console-color.contant';
+export * from './console-color.constant';

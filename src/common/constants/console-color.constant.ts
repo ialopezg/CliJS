@@ -1,3 +1,7 @@
+/**
+ * @deprecated This feature is deprecated and is not recommended it use. Use instead
+ * ConsoleColorService.getColor funtion. In future, versions this feature will be deleted.
+ */
 export const ConsoleColor = {
   RESET: '\x1b[0m',
 
@@ -25,4 +29,5 @@ export const ConsoleColor = {
   FG_MAGENTA: '\x1b[35m',
   FG_CYAN: '\x1b[36m',
   FG_WHITE: '\x1b[37m',
+  FG_GRAY: '\x1b[90m',
 };
