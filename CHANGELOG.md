@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/ialopezg/custom-console-colors/compare/v0.0.1...v0.0.2) (2022-05-25)
+
+
+### Features
+
+* Add bright colors ([c4844ec](https://github.com/ialopezg/custom-console-colors/commits/c4844ec334afbaa660569c3a52c7dc46d7ffe9b5))
+* **test:** Add unit tests ([7acb460](https://github.com/ialopezg/custom-console-colors/commits/7acb460c3b1338ca0eed60f733635b14a3e2cffd))
+
+
+### Bug Fixes
+
+* **CI:** GitHub Action Release ([e2390e6](https://github.com/ialopezg/custom-console-colors/commits/e2390e6917ba0e70a71f0f1fb16804d42be6c1df))
+* **deps:** Add dev dependencies for rollup setup ([c226ced](https://github.com/ialopezg/custom-console-colors/commits/c226ced9b3df573171e17167dee84844e17e65b9))
+
 ### [0.0.1](https://github.com/ialopezg/custom-console-colors/compare/v0.0.0...v0.0.1) (2022-05-25)
 
 
