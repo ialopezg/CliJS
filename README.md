@@ -11,6 +11,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status](https://coveralls.io/repos/github/ialopezg/custom-console-colors/badge.svg?branch=main)](https://coveralls.io/github/ialopezg/custom-console-colors?branch=main)
 [![All Contributors][contributors]][contributors-link]
+<br class="badge-separator" />
 <span class="badge-patreon"><a href="https://patreon.com/ialopezg" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
 <span class="badge-opencollective"><a href="https://opencollective.com/ialopezg" title="Donate to this project using Open Collective"><img src="https://img.shields.io/badge/open%20collective-donate-yellow.svg" alt="Open Collective donate button" /></a></span>
 <span class="badge-paypal"><a href="https://www.paypal.me/isidrolopezg" title="Donate to this project using Open Collective"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="Open Collective donate button" /></a></span>
