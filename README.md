@@ -6,13 +6,14 @@
 </div>
 <br />
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
+<span class="badge-npmversion"><a href="https://npmjs.org/package/custom-console-colors" title="View this project on NPM"><img src="https://img.shields.io/npm/v/custom-console-colors.svg" alt="NPM version" /></a></span>
+<span class="badge-npmdownloads"><a href="https://npmjs.org/package/custom-console-colors" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/custom-console-colors.svg" alt="NPM downloads" /></a></span>
 [![Build Status][travis-image]][travis-url]
-[![Build Status][travis-image-windows]][travis-url]
-[![Build Status][travis-image-osx]][travis-url]
 [![Coverage Status](https://coveralls.io/repos/github/ialopezg/custom-console-colors/badge.svg?branch=main)](https://coveralls.io/github/ialopezg/custom-console-colors?branch=main)
 [![All Contributors][contributors]][contributors-link]
+<span class="badge-patreon"><a href="https://patreon.com/ialopezg" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
+<span class="badge-opencollective"><a href="https://opencollective.com/ialopezg" title="Donate to this project using Open Collective"><img src="https://img.shields.io/badge/open%20collective-donate-yellow.svg" alt="Open Collective donate button" /></a></span>
+<span class="badge-paypal"><a href="https://www.paypal.me/isidrolopezg" title="Donate to this project using Open Collective"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="Open Collective donate button" /></a></span>
 
  > Custom Console Colors to be used in a NodeJS or Terminal console.
 
@@ -47,7 +48,7 @@ You have two options to install this repository.
    ```json
    {
      "dependencies": {
-       "@ialopezg/core": "^0.0.1"
+       "custom-console-colors": "^0.0.1"
      }
    }
    ```
@@ -63,7 +64,7 @@ You have two options to install this repository.
 2. By using a package manager
    ```bash
    # NPM
-   npm install --save @ialopezg/core
+   npm install --save custom-console-color
    # or Yarn
    yarn add @ialopezg/core
    ```
@@ -94,10 +95,7 @@ CustomConsoleColors is licensed under [MIT](LICENSE) license.
 [npm-url]: https://npmjs.org/package/custom-console-colors
 [downloads-image]: https://img.shields.io/npm/dm/custom-console-colors.svg
 [downloads-url]: https://npmcharts.com/compare/custom-console-colors?minimal=true
-[travis-url]: https://app.travis-ci.com/ialopezg/custom-console-colors.svg?branch=main
-[travis-image]: https://img.shields.io/travis/ialopezg/custom-console-colors/main.svg?label=linux
-[travis-image-osx]: https://img.shields.io/travis/ialopezg/custom-console-colors/main.svg?label=osx
-[travis-image-windows]: https://img.shields.io/travis/ialopezg/custom-console-colors/main.svg?label=windows
-[travis-url]: https://travis-ci.org/ialopezg/custom-console-colors
+[travis-url]: https://app.travis-ci.com/ialopezg/custom-console-colors
+[travis-image]: https://app.travis-ci.com/ialopezg/custom-console-colors.svg?branch=main&label=linux
 [contributors]: https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square
 [contributors-link]: #contributors

@@ -8,10 +8,6 @@ branches:
 cache:
   directories:
     - node_modules
-os:
-  - osx
-  - linux
-  - windows
 before_install:
   - npm update
 install:
