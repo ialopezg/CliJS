@@ -1,59 +1,55 @@
-import typescript from '@rollup/plugin-typescript'
-import resolve from '@rollup/plugin-node-resolve'
-import { terser } from 'rollup-plugin-terser'
-import pkg from './package.json'
+import typescript from '@rollup/plugin-typescript';
+import { terser } from 'rollup-plugin-terser';
+import pkg from './package.json';
 
-const outputDir = pkg.main.substr(0, pkg.main.indexOf('/')) || 'lib'
-const filename = pkg.main.replace(outputDir + '/', '').replace('.js', '')
+const filename = pkg.main.replace('.js', '').replace('lib/', '');
+const outputDir = 'lib';
 
-const production = !process.env.ROLLUP_WATCH
-
-const outputs = [
-  {
-    dir: outputDir,
-    entryFileNames: `${filename}.js`,
-    format: 'cjs',
-    sourcemap: true
-  },
-  {
-    dir: outputDir,
-    entryFileNames: `${filename}.min.js`,
-    format: 'cjs',
-    sourcemap: true
-  },
-  {
-    dir: outputDir,
-    entryFileNames: `${filename}.[format].js`,
-    format: 'es',
-    sourcemap: true
-  },
-  {
-    dir: outputDir,
-    entryFileNames: `${filename}.[format].min.js`,
-    format: 'es',
-    sourcemap: true
-  }
-]
-
-const common = {
-  input: 'src/index.ts',
-  external: [
-    ...Object.keys(pkg.dependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {})
+export default {
+  input: `src/${filename}.ts`,
+  output: [
+    {
+      dir: outputDir,
+      entryFileNames: `${filename}.js`,
+      format: 'cjs',
+      sourcemap: true,
+    },
+    {
+      dir: outputDir,
+      entryFileNames: `${filename}.min.js`,
+      format: 'cjs',
+      sourcemap: true,
+      plugins: [terser()],
+    },
+    {
+      dir: outputDir,
+      entryFileNames: `${filename}.[format].js`,
+      format: 'es',
+      sourcemap: true,
+    },
+    {
+      dir: outputDir,
+      entryFileNames: `${filename}.[format].min.js`,
+      format: 'es',
+      sourcemap: true,
+      plugins: [terser()],
+    },
+    {
+      dir: outputDir,
+      entryFileNames: `${filename}.[format].js`,
+      format: 'umd',
+      sourcemap: true,
+      name: 'CustomConsoleColors',
+    },
+    {
+      dir: outputDir,
+      entryFileNames: `${filename}.[format].min.js`,
+      format: 'umd',
+      sourcemap: true,
+      name: 'CustomConsoleColors',
+      plugins: [terser()],
+    },
   ],
-  plugins: [
-    typescript({
-      typescript: require('typescript')
-    }),
-    resolve(),
-    production &&
-      terser({
-        include: [/^.+\.min\.js$/, '*es*', '*umd*', '*iife*']
-      })
-  ]
-}
-
-export default outputs.map(output => ({
-  ...common,
-  output
-}))
+  external: [...Object.keys(pkg.dependencies || {})],
+  plugins: [typescript()],
+};
