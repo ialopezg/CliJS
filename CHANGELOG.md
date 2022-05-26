@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/ialopezg/custom-console-colors/compare/v0.0.2...v0.0.3) (2022-05-26)
+
+
+### Bug Fixes
+
+* **example:** update example ([f75cb55](https://github.com/ialopezg/custom-console-colors/commits/f75cb55cc1ce53f3c15c90bd29ae09da46f9a938))
+
 ### [0.0.2](https://github.com/ialopezg/custom-console-colors/compare/v0.0.1...v0.0.2) (2022-05-25)
 
 
