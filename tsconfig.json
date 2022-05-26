@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "CommonJS",
-    "lib": ["ES6"],
+    "module": "ESNext",
+    "lib": [
+      "ES6"
+    ],
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -11,9 +13,20 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "typeRoots": ["node_modules/@types"],
-    "types": ["jest", "node"]
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "jest",
+      "node"
+    ]
   },
-  "include": ["./src/**/*"],
-  "exclude": ["lib", "node_modules", "**/*.spec.ts"]
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "lib",
+    "node_modules",
+    "**/*.spec.ts"
+  ]
 }

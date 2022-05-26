@@ -1,4 +1,4 @@
-import { ConsoleColorService } from '../src';
+const { ConsoleColorService } = require('custom-console-colors');
 
 console.log(
   ConsoleColorService.black('Black color\t\t'),
