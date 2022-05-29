@@ -1,1 +1,2 @@
-export * from './console-color.constant';
+export * from './color.constants';
+export * from './format.constants';

@@ -5,5 +5,4 @@
  * https://ialopezg.com
  * MIT License
  */
-
-export { ConsoleColorService } from './common';
+export { ColorService as Color } from './services';
