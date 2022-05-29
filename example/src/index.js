@@ -1,95 +1,96 @@
-const { ConsoleColorService } = require('custom-console-colors');
+const { Color } = require('custom-console-colors');
 
 console.log(
-  ConsoleColorService.black('Black color\t\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.black('BLACK          \t')),
-  ConsoleColorService.bgBlack('     '),
+  Color.black('Black color\t\t'),
+  Color.bgWhite(Color.black('BLACK          \t')),
+  Color.bgBlack('     '),
 );
 console.log(
-  ConsoleColorService.brightBlack('Bright Black color\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.brightBlack('BRIGHT BLACK   \t')),
-  ConsoleColorService.bgBrightBlack('     '),
+  Color.brightBlack('Bright Black color\t'),
+  Color.bgWhite(Color.brightBlack('BRIGHT BLACK   \t')),
+  Color.bgBrightBlack('     '),
 );
 console.log(
-  ConsoleColorService.blue('Blue color\t\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.blue('BLUE           \t')),
-  ConsoleColorService.bgBlue('     '),
+  Color.blue('Blue color\t\t'),
+  Color.bgWhite(Color.blue('BLUE           \t')),
+  Color.bgBlue('     '),
 );
 console.log(
-  ConsoleColorService.brightBlue('Bright Blue color\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.brightBlue('BRIGHT BLUE    \t')),
-  ConsoleColorService.bgBrightBlue('     '),
+  Color.brightBlue('Bright Blue color\t'),
+  Color.bgWhite(Color.brightBlue('BRIGHT BLUE    \t')),
+  Color.bgBrightBlue('     '),
 );
 console.log(
-  ConsoleColorService.cyan('Cyan color\t\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.cyan('CYAN           \t')),
-  ConsoleColorService.bgCyan('     '),
+  Color.cyan('Cyan color\t\t'),
+  Color.bgWhite(Color.cyan('CYAN           \t')),
+  Color.bgCyan('     '),
 );
 console.log(
-  ConsoleColorService.brightCyan('Bright Cyan color\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.brightCyan('BRIGHT CYAN    \t')),
-  ConsoleColorService.bgBrightCyan('     '),
+  Color.brightCyan('Bright Cyan color\t'),
+  Color.bgWhite(Color.brightCyan('BRIGHT CYAN    \t')),
+  Color.bgBrightCyan('     '),
 );
 console.log(
-  ConsoleColorService.green('Green color\t\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.green('GREEN          \t')),
-  ConsoleColorService.bgGreen('     '),
+  Color.green('Green color\t\t'),
+  Color.bgWhite(Color.green('GREEN          \t')),
+  Color.bgGreen('     '),
 );
 console.log(
-  ConsoleColorService.brightGreen('Bright Green color\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.green('BRIGHT GREEN   \t')),
-  ConsoleColorService.bgBrightGreen('     '),
+  Color.brightGreen('Bright Green color\t'),
+  Color.bgWhite(Color.green('BRIGHT GREEN   \t')),
+  Color.bgBrightGreen('     '),
 );
 console.log(
-  ConsoleColorService.magenta('Magenta color\t\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.magenta('MAGENTA        \t')),
-  ConsoleColorService.bgMagenta('     '),
+  Color.magenta('Magenta color\t\t'),
+  Color.bgWhite(Color.magenta('MAGENTA        \t')),
+  Color.bgMagenta('     '),
 );
 console.log(
-  ConsoleColorService.magenta('Bright Magenta color\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.magenta('BRIGHT MAGENTA \t')),
-  ConsoleColorService.bgMagenta('     '),
+  Color.magenta('Bright Magenta color\t'),
+  Color.bgWhite(Color.magenta('BRIGHT MAGENTA \t')),
+  Color.bgMagenta('     '),
 );
 console.log(
-  ConsoleColorService.red('Red color\t\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.red('RED            \t')),
-  ConsoleColorService.bgRed('     ')
+  Color.red('Red color\t\t'),
+  Color.bgWhite(Color.red('RED            \t')),
+  Color.bgRed('     ')
 );
 console.log(
-  ConsoleColorService.red('Bright Red color\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.red('BRIGHT RED     \t')),
-  ConsoleColorService.bgBrightRed('     ')
+  Color.red('Bright Red color\t'),
+  Color.bgWhite(Color.red('BRIGHT RED     \t')),
+  Color.bgBrightRed('     ')
 );
 console.log(
-  ConsoleColorService.white('White color\t\t'),
-  ConsoleColorService.bgWhite('WHITE          \t'),
-  ConsoleColorService.bgWhite('     '),
+  Color.white('White color\t\t'),
+  Color.bgWhite('WHITE          \t'),
+  Color.bgWhite('     '),
 );
 console.log(
-  ConsoleColorService.brightWhite('Bright White color\t'),
-  ConsoleColorService.bgWhite('BRIGHT WHITE   \t'),
-  ConsoleColorService.bgBrightWhite('     '),
+  Color.brightWhite('Bright White color\t'),
+  Color.bgWhite('BRIGHT WHITE   \t'),
+  Color.bgBrightWhite('     '),
 );
 console.log(
-  ConsoleColorService.yellow('Yellow color\t\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.yellow('YELLOW         \t')),
-  ConsoleColorService.bgYellow('     '),
+  Color.yellow('Yellow color\t\t'),
+  Color.bgWhite(Color.yellow('YELLOW         \t')),
+  Color.bgYellow('     '),
 );
 console.log(
-  ConsoleColorService.yellow('Bright Yellow color\t'),
-  ConsoleColorService.bgWhite(ConsoleColorService.yellow('BRIGHT YELLOW  \t')),
-  ConsoleColorService.bgBrightYellow('     '),
+  Color.yellow('Bright Yellow color\t'),
+  Color.bgWhite(Color.yellow('BRIGHT YELLOW  \t')),
+  Color.bgBrightYellow('     '),
 );
 
-process.stdout.write(`${ConsoleColorService.bold(ConsoleColorService.red('Custom'))} ` +
-  `${ConsoleColorService.bgWhite(ConsoleColorService.italic(ConsoleColorService.black('Console ')))}` +
-  `${ConsoleColorService.bgBlack(ConsoleColorService.white('Colors'))} ` +
+process.stdout.write(`${Color.bold(Color.red('Custom'))} ` +
+  `${Color.bgWhite(Color.italic(Color.black('Console ')))}` +
+  `${Color.bgBlack(Color.white('Colors'))} ` +
   'Example\n',
 );
 
-console.log(ConsoleColorService.bold('Bold'));
-console.log(ConsoleColorService.italic('Italic'));
-console.log(ConsoleColorService.strikeThrough('StrikeThrough'));
-console.log(ConsoleColorService.underline('Underline'));
-console.log(ConsoleColorService.dim('Dim'));
-console.log(ConsoleColorService.hidden('Hidden'));
+console.log(Color.bold('Bold'));
+console.log(Color.italic('Italic'));
+console.log(Color.strikeThrough('StrikeThrough'));
+console.log(Color.underline('Underline'));
+console.log(Color.dim('Dim'));
+console.log(Color.hidden('Hidden'));
+console.log(Color.bgWhite(Color.red().bold('Custom Console Colors')));
