@@ -72,22 +72,22 @@ You have two options to install this repository.
 
 ### Usage
 
-Usage:
+__Usage__
 ```javascript
 const { Color } = require('custom-console-color')
 ```
 
-Colored text
+__Colored text__
 ```javascript
 console.log(Color.red('Red color text'));
 ```
 
-Mixed styles
+__Mixed styles__
 ```javascript
 console.log(Color.red().bold('Red color text with bold style'))
 ```
 
-Styled text with unstyled text
+__Styled text with unstyled text__
 ```javascript
 console.log(`${Color.red('Red color')} text with ${Color.bold('unstyled')} text`)
 ```
