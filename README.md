@@ -16,7 +16,7 @@
 <span class="badge-opencollective"><a href="https://opencollective.com/ialopezg" title="Donate to this project using Open Collective"><img src="https://img.shields.io/badge/open%20collective-donate-yellow.svg" alt="Open Collective donate button" /></a></span>
 <span class="badge-paypal"><a href="https://www.paypal.me/isidrolopezg" title="Donate to this project using Open Collective"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="Open Collective donate button" /></a></span>
 
- > Custom Console Colors to be used in a NodeJS or Terminal console.
+ > Custom Colors and Formats to be used in NodeJS or in a Terminal console.
 
 ## Technology Stack
 
@@ -69,18 +69,81 @@ You have two options to install this repository.
    # or Yarn
    yarn add @ialopezg/core
    ```
-## Documentation & Quick Start
 
-[Documentation & Tutorial](https://ialopezg.gitbook.io/custom-console-colors/)
+### Usage
 
-## Future
+Usage:
+```javascript
+const { Color } = require('custom-console-color')
+```
 
-CoreJS is very much still a work in progress. There is still some things to finish:
+Colored text
+```javascript
+console.log(Color.red('Red color text'));
+```
 
-- Test utilities
-- and more...
+Mixed styles
+```javascript
+console.log(Color.red().bold('Red color text with bold style'))
+```
 
-## Contributors
+Styled text with unstyled text
+```javascript
+console.log(`${Color.red('Red color')} text with ${Color.bold('unstyled')} text`)
+```
+
+__Predefining colors__
+```javascript
+const error = Color.red;
+const log = Color.green;
+const notice = Color.blue;
+const warn = Color.yellow;
+
+console.log(error('Error!'));
+console.log(log('Log!'));
+console.log(notice('Notice!'));
+console.log(warn('Warning!'));
+```
+
+## Available Colors and Styles
+
+### Styles
+
+* bold
+* dim
+* italic
+* underline
+* blink
+* inverse
+* hidden
+* strike
+
+### Foreground colors
+| Normal (ANSI) | Bright (Extended) |
+| ------------- | ----------------- |
+| black | brightBlack |
+| red | brightRed |
+| green | brightGreen |
+| yellow | brightYellow |
+| blue | brightBlue |
+| magenta | brightMagenta |
+| cyan | brightCyan|
+| white | brightWhite |
+
+### Background colors
+
+| Normal (ANSI) | Bright (Extended) |
+| --- | --- |
+| bgBlack | bgBrightBlack |
+| bgRed | bgBrightRed |
+| bgGreen | bgBrightGreen |
+| bgYellow | bgBrightYellow |
+| bgBlue | bgBrightBlue |
+| bgMagenta | bgBrightMagenta |
+| bgCyan | bgBrightCyan |
+| bgWhite | bgBrightWhite |
+
+## People
 
 Author - [Isidro A. Lopez G.](https://github.com/ialopezg")
 

@@ -94,3 +94,34 @@ console.log(Color.underline('Underline'));
 console.log(Color.dim('Dim'));
 console.log(Color.hidden('Hidden'));
 console.log(Color.bgWhite(Color.red().bold('Custom Console Colors')));
+
+const error = Color.red;
+const log = Color.green;
+const notice = Color.blue;
+const warn = Color.yellow;
+
+console.log(error('Error!'));
+console.log(log('Log!'));
+console.log(notice('Notice!'));
+console.log(warn('Warning!'));
+
+
+const appStarted = (host, port, proxy) => {
+  const divider = Color.green('\n-----------------------------------')
+  const ip = '127.0.0.1';
+
+  console.log(`Server started! ${Color.green('✓')}`)
+  if (proxy) {
+    console.log(`Proxy initialized! ${Color.green('✓')}`)
+  }
+
+  console.log(`
+${Color.bold('Access URLs:')}${divider}
+Localhost: ${Color.magenta(`http://${host}:${port}`)}
+      LAN: ${Color.magenta(`http://${ip}:${port}`) +
+    (proxy ? `\n    Proxy: ${Color.magenta(proxy)}` : '')}${divider}
+${Color.blue(`Press ${Color.italic('CTRL-C')} to stop`)}
+    `)
+};
+
+appStarted('localhost', 3000, '192.168.0.255');
