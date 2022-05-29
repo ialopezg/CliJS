@@ -49,7 +49,7 @@ You have two options to install this repository.
    ```json
    {
      "dependencies": {
-       "custom-console-colors": "^0.0.1"
+       "custom-console-colors": "^0.0.4"
      }
    }
    ```
