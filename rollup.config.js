@@ -1,5 +1,5 @@
 import typescript from '@rollup/plugin-typescript';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 import pkg from './package.json';
 
 const filename = pkg.main.replace('.js', '').replace('lib/', '');
