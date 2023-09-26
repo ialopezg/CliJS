@@ -1,5 +1,5 @@
 {
-  "name": "custom-console-colors",
+  "name": "@ialopezg/console",
   "version": "0.0.5",
   "description": "Custom colors to be used in a NodeJS console",
   "main": "lib/index.js",

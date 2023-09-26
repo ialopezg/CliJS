@@ -1,11 +1,11 @@
-import typescript from '@rollup/plugin-typescript';
-import terser from '@rollup/plugin-terser';
-import pkg from './package.json';
+const typescript = require('@rollup/plugin-typescript');
+const terser = require('@rollup/plugin-terser');
+const pkg = require('./package.json');
 
 const filename = pkg.main.replace('.js', '').replace('lib/', '');
 const outputDir = 'lib';
 
-export default {
+module.exports = {
   input: `src/${filename}.ts`,
   output: [
     {
