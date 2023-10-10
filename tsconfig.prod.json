@@ -1,18 +1,13 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
     "declaration": true,
-    "noImplicitAny": false,
     "removeComments": false,
-    "noLib": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es6",
     "sourceMap": false,
-    "outDir": "node_modules/@ialopezg/corejs"
+    "outDir": "node_modules/@ialopezg/cli"
   },
   "files": [
-    "src/index.ts"
+    "./src/index.ts"
   ],
   "exclude": [
     "node_modules"

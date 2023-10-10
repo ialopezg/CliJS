@@ -1,5 +1,4 @@
-import { parseFormat } from '../common';
-import { colorCodes, formatCodes } from '../common/constants';
+import { colorCodes, formatCodes, parseFormat } from '../common';
 
 export class ColorService {
   private static readonly _styles: number[] = [];
@@ -115,7 +114,7 @@ export class ColorService {
     this._styles.push(code);
     if (message) {
       let result = message;
-      this._styles.forEach((format) => {
+      this._styles.forEach((_format) => {
         result = parseFormat(code, result);
       });
       this._styles.splice(0, this._styles.length);
