@@ -1,6 +1,6 @@
 {
   "name": "@ialopezg/cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Custom colors to be used in a NodeJS console",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
