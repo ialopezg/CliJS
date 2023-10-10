@@ -1,7 +1,8 @@
 {
   "name": "@ialopezg/cli",
   "version": "0.0.7",
-  "description": "Custom colors to be used in a NodeJS console",
+  "description": "Custom CLI tools for Node.js",
+  "private": false,
   "main": "lib/index.js",
   "module": "lib/index.es.js",
   "types": "lib/index.d.js",
