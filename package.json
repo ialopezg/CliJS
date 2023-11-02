@@ -4,10 +4,10 @@
   "description": "CLI tools for Node.js",
   "private": false,
   "main": "lib/index.js",
-  "module": "lib/index.es.js",
+  "module": "lib/index.js",
   "types": "lib/index.d.js",
   "scripts": {
-    "prebuild": "rollup --version && rimraf lib && npm run lint:fix",
+    "prebuild": "tsc --version && rimraf lib && npm run lint:fix",
     "build": "tsc -p tsconfig.prod.json",
     "build:live": "nodemon -e ts --watch src index.js",
     "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",

@@ -1,8 +1,8 @@
 /**
  * CoreJS
  *
- * Copyright 1995-present Isidro A. Lopez G.
+ * Copyright(c) 1995-present Isidro A. Lopez G.
  * https://ialopezg.com
  * MIT License
  */
-export { ColorService as Color } from './services';
+export * from './services';

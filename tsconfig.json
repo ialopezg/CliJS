@@ -1,32 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "ESNext",
-    "lib": [
-      "ES6"
-    ],
-    "declaration": true,
-    "declarationMap": true,
+    "module": "CommonJS",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
     "sourceMap": true,
-    "outDir": "./lib",
-    "rootDir": "./src",
-    "noImplicitAny": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "types": [
-      "jest",
-      "node"
-    ]
+    "allowJs": true
   },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "lib",
-    "node_modules",
-    "**/*.spec.ts"
-  ]
+  "exclude": ["node_modules"]
 }
