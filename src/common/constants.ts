@@ -1,0 +1,1 @@
+export const ANSI_BACKGROUND_OFFSET = 10;
