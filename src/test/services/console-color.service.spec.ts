@@ -1,6 +1,6 @@
 import { Color } from '../../';
 import { parseFormat } from '../../common';
-import { ansiStyles, colors } from '../../common/constants/color.constants';
+import { ansiStyles } from '../../common/constants/color.constants';
 
 describe('ConsoleColorService', () => {
   describe('logging', () => {
@@ -12,7 +12,7 @@ describe('ConsoleColorService', () => {
 
     it('should print an entry as a debug message', () => {
       const text = 'Hello World!';
-      const debug = parseFormat(ansiStyles['green'], text);
+      const debug = parseFormat(ansiStyles.colors.green, text);
 
       expect(Color.debug(text)).toContain(debug);
       expect(Color.debug(text)).toBe(debug);
@@ -20,7 +20,7 @@ describe('ConsoleColorService', () => {
 
     it('should print an entry as an error message', () => {
       const text = 'Hello World!';
-      const error = parseFormat(ansiStyles['red'], text);
+      const error = parseFormat(ansiStyles.colors.red, text);
 
       expect(Color.error(text)).toContain(error);
       expect(Color.error(text)).toBe(error);
@@ -153,21 +153,21 @@ describe('ConsoleColorService', () => {
 
   describe('Formats', () => {
     it('should reset all formats applied to the console', () => {
-      const reset = parseFormat(ansiStyles['reset']);
+      const reset = parseFormat(ansiStyles.modifiers.reset);
 
       expect(Color.reset()).toBe(reset);
     });
 
     it('should print a hidden console text', () => {
-      const bold = parseFormat(ansiStyles['bold'], 'Hello World!');
+      const bold = parseFormat(ansiStyles.modifiers.bold, 'Hello World!');
       const dim = parseFormat(ansiStyles['dim'], 'Hello World!');
       const italic = parseFormat(ansiStyles['italic'], 'Hello World!');
       const underline = parseFormat(ansiStyles['underline'], 'Hello World!');
       const blink = parseFormat(ansiStyles['blink'], 'Hello World!');
       const inverse = parseFormat(ansiStyles['inverse'], 'Hello World!');
       const hidden = parseFormat(ansiStyles['hidden'], 'Hello World!');
-      const strike = parseFormat(ansiStyles['strike'], 'Hello World!');
-      const overline = parseFormat(ansiStyles['overline'], 'Hello World!');
+      const strike = parseFormat(ansiStyles.modifiers.strike, 'Hello World!');
+      const overline = parseFormat(ansiStyles.modifiers.overline, 'Hello World!');
 
       expect(Color.bold('Hello World!')).toBe(bold);
       expect(Color.dim('Hello World!')).toBe(dim);
@@ -182,7 +182,7 @@ describe('ConsoleColorService', () => {
 
   describe('Other formats', () => {
     it('should print a console text with combined formats', () => {
-      const text = `\x1b[37mHello\x1b[39m \x1b[47mWorld!\x1b[49m from \x1b[33mCustomConsoleColors\x1b[39m`;
+      const text = '\x1b[37mHello\x1b[39m \x1b[47mWorld!\x1b[49m from \x1b[33mCustomConsoleColors\x1b[39m';
 
       expect(
         `${Color.white('Hello')} ${Color.bgWhite('World!')} from ${Color.yellow(
