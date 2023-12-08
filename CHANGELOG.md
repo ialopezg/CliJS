@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/ialopezg/custom-console-colors/compare/v1.0.2...v1.0.3) (2023-12-08)
+
+
+### Features
+
+* color improvements ([999f13d](https://github.com/ialopezg/custom-console-colors/commits/999f13dd8944ccb71047e9ba99341aebb43e8eb4))
+* improve colors ([6e4f9da](https://github.com/ialopezg/custom-console-colors/commits/6e4f9da624b5f6ffccaa41acffa14b3201af4c24))
+
 ### [1.0.2](https://github.com/ialopezg/custom-console-colors/compare/v1.0.1...v1.0.2) (2023-11-02)
 
 
